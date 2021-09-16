@@ -1,0 +1,134 @@
+[
+    {
+        "title": "Pop",
+        "background": "#DC4585"
+    },
+    {
+        "title": "Dance & EDM",
+        "background": "#00ABBD"
+    },
+    {
+        "title": "R&B",
+        "background": "#E9992F"
+    },
+    {
+        "title": "Rap",
+        "background": "#1D2CAF"
+    },
+    {
+        "title": "Rock",
+        "background": "#AB2222"
+    },
+    {
+        "title": "Latin music",
+        "background": "#DB6349"
+    },
+    {
+        "title": "Country",
+        "background": "#605245"
+    },
+    {
+        "title": "Metal",
+        "background": "#202023"
+    },
+    {
+        "title": "Soul & Funk",
+        "background": "#956FD5"
+    },
+    {
+        "title": "Electronic",
+        "background": "#3DA567"
+    },
+    {
+        "title": "K-pop",
+        "background": "#FF7676"
+    },
+    {
+        "title": "Reggae",
+        "background": "#3DA567"
+    },
+    {
+        "title": "Reggaeton",
+        "background": "#95B145"
+    },
+    {
+        "title": "Arabic music",
+        "background": "#5e2020"
+    },
+    {
+        "title": "Classical",
+        "background": "#101010"
+    },
+    {
+        "title": "Indie",
+        "background": "#1A779F"
+    },
+    {
+        "title": "Brazilian music",
+        "background": "#3EBC58"
+    },
+    {
+        "title": "African music",
+        "background": "#2F2069"
+    },
+    {
+        "title": "Jazz",
+        "background": "#2C3873"
+    },
+    {
+        "title": "Soundtracks",
+        "background": "#6B6B6B"
+    },
+    {
+        "title": "Mexican music",
+        "background": "#f754d7"
+    },
+    {
+        "title": "Russian music",
+        "background": "#f76913"
+    },
+    {
+        "title": "Japanese music",
+        "background": "#BE7E9D"
+    },
+    {
+        "title": "Blues",
+        "background": "#425975"
+    },
+    {
+        "title": "Salsa",
+        "background": "#CB7444"
+    },
+    {
+        "title": "French music",
+        "background": "#3ABEA7"
+    },
+    {
+        "title": "Asian music",
+        "background": "#3ABEA7"
+    },
+    {
+        "title": "Turkish music",
+        "background": "#000000"
+    },
+    {
+        "title": "Flamenco",
+        "background": "#ce0007"
+    },
+    {
+        "title": "Colombian music",
+        "background": "#86301d"
+    },
+    {
+        "title": "Kwaito & House",
+        "background": "#2BB9A8"
+    },
+    {
+        "title": "Italian music",
+        "background": "#2663D1"
+    },
+    {
+        "title": "Argentinian music",
+        "background": "#006fff"
+    }
+]

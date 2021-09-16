@@ -1,0 +1,86 @@
+.wrapper {
+  padding: 20px 2%;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .item {
+      max-width: min-content;
+      svg {
+        display: none;
+      }
+    }
+    .upload {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: var(--text-color);
+      margin: 5px 25px;
+      margin-left: 0;
+      width: 20%;
+      height: 210px;
+      min-width: 234px;
+      border: 1px solid var(--pink);
+      svg {
+        min-width: unset;
+        margin: 10px;
+      }
+      &:hover {
+        filter: opacity(0.8);
+      }
+      @media screen and (max-width: 500px) {
+        margin: 0;
+      }
+    }
+  }
+  .welcome {
+    span {
+      color: var(--pink);
+      font-weight: bold;
+    }
+  }
+  &--guest {
+    padding: 50px 0 30px 70px;
+    background: url("../compose-music.svg") no-repeat right;
+    background-size: contain;
+    h1 {
+      font-size: 6rem;
+      width: 40vw;
+    }
+
+    :global(.btn) {
+      padding: 10px 40px;
+      display: inline-block;
+      width: auto;
+      &:global(.outline) {
+        background-color: white;
+        border-color: var(--divider);
+        color: black;
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      h1 {
+        font-size: 3rem;
+        width: 50vw;
+      }
+    }
+    @media screen and (max-width: 800px) {
+      background: url("../marshmellow.svg") no-repeat right;
+      background-size: contain;
+    }
+    @media screen and (max-width: 500px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      :global(.btn) {
+        padding: 15px 30px;
+      }
+    }
+  }
+}

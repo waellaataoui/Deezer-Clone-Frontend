@@ -1,13 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { PersistGate } from 'redux-persist/integration/react'
+
+import './index.scss';
+
 import App from './App';
+import {
+  persistStore
+
+} from 'redux-persist'
 import reportWebVitals from './reportWebVitals';
+import "./axios-config";
+import { Provider } from 'react-redux'
+import { IconContext } from "react-icons";
+
+import store from "./store"
+let persistor = persistStore(store)
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+
+      <React.StrictMode>
+        <IconContext.Provider value={{ className: "react-icon" }}>
+
+          <App />
+        </IconContext.Provider>
+
+      </React.StrictMode>
+    </PersistGate>
+
+  </Provider>,
   document.getElementById('root')
 );
 

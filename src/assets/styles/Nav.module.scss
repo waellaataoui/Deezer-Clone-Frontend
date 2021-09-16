@@ -1,0 +1,130 @@
+#nav {
+  height: 56px;
+  position: sticky;
+  background-color: var(--bg-color);
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--divider);
+  z-index: 55;
+
+  &.big {
+    height: 75px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    img {
+      width: 75px;
+      height: 100%;
+      margin-right: 10px;
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    a {
+      text-decoration: none;
+      width: 150px;
+      padding: 10px 30px;
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    .links {
+      display: none;
+      &.show {
+        display: flex;
+      }
+    }
+    // .logo {
+    //   display: none;
+    // }
+    // .searchForm {
+    //   display: none;
+    // }
+  }
+}
+.dropdown {
+  .menuTrigger {
+    border-radius: 90px;
+    width: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 6px;
+    border: none;
+    vertical-align: middle;
+    transition: box-shadow 0.4s ease;
+
+    &:hover {
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .menu {
+    background-color: var(--component-bg);
+    border-radius: 8px;
+    position: absolute;
+    top: 80px;
+    right: 1%;
+    width: 300px;
+    box-shadow: 0 1px 8px var(--box-shadow-color);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      border-bottom: 1px solid var(--box-shadow-color);
+      transition: all 0.2s ease-in;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--pink);
+      }
+      a {
+        text-decoration: none;
+        color: var(--text-color);
+        display: block;
+        width: 100%;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    &Active {
+      @extend .menu;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    @media screen and (max-width: 900px) {
+      max-width: 250px;
+    }
+  }
+}
+.icon {
+  width: 20px;
+  height: 25px;
+  &-white {
+    @extend .icon;
+    filter: invert(100%);
+  }
+}

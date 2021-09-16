@@ -1,0 +1,28 @@
+.filters {
+  display: flex;
+  border-bottom: 1px solid var(--divider);
+  label {
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #72727d;
+    &:first-child {
+      margin-left: 0;
+    }
+    &.active {
+      color: var(--text-color);
+      border-bottom: 2px solid var(--pink);
+    }
+    &:hover {
+      color: var(--text-color);
+      border-bottom: 2px solid #72727d;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    overflow-x: scroll;
+    label {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

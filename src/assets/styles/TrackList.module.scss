@@ -1,0 +1,19 @@
+.container {
+  margin: 0 5%;
+  padding: 0 10px;
+}
+.header {
+  color: #72727d;
+  border-top: 1px solid var(--divider);
+  .track {
+    width: 30%;
+    margin-left: 102px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    .track {
+      margin-right: 15px;
+    }
+  }
+}

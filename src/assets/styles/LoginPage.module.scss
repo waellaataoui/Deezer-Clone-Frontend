@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  height: 100vh;
+}
+.formContainer {
+  min-width: 60%;
+  padding: 30px 10px;
+  background-color: var(--auth-bg);
+  text-align: center;
+  color: var(--text-color);
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    input {
+      display: block;
+      padding: 20px 30px;
+      margin: 5px 0;
+      width: 50%;
+      border: none;
+      font-size: 1rem;
+    }
+  }
+  p > a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+  }
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    form {
+      input {
+        width: 100%;
+        margin: 5px;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+.videoContainer {
+  width: 40%;
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  a {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    width: 140px;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    .socialIcon {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+    &.facebook {
+      background-color: #3c5a99;
+      color: white;
+    }
+    &.google {
+      background-color: white;
+      color: black;
+    }
+  }
+}
+.error {
+  color: var(--pink);
+}

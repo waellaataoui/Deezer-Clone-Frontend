@@ -1,0 +1,27 @@
+.userInfos {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  .avatar {
+    width: 20%;
+    border-radius: 50%;
+  }
+  .details {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      svg {
+        margin: 5px;
+      }
+    }
+    p {
+      color: #727272;
+      font-size: 0.75rem;
+    }
+  }
+}
